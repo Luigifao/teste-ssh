@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 400vh;
+    background-color: #e7ddbf;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h2{
+    
+    font-family: 'Righteous', cursive;
+}
+p{
+    font-family: 'sarala',cursive;
+}
+:root{
+    --branca: #f6f6f6;
+    color:  #22031F;
+}
+header{
+    width: 100%;
+    padding: 5px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 150px;
+}
+
+.container{
+    background-color: #22031F;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a {
+    position: relative;
+    padding: 3px 0;
+
+}
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #f6f6f6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+header nav ul{
+    display: flex;
+    padding: 3rem;
+    gap: 1rem;
+    justify-content: space-between;
+    color: #f6f6f6;
+}
+.elem_nav{
+    color: #f6f6f6;
+}
+
+.circulo_nav img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.banner {
+    height: 100vh;
+    background-image: url(img/pexels-kevin-ku-577585.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.banner h1{
+    font-size: 4em;
+    color: #f6f6f6;
+}
+header ul li{
+    display: inline-block;
+    margin: 0px 40px;
+
+}
+.sumary_list{
+    display: none;
+    position: absolute;
+    background-color: #22031F;
+    padding: 10px;
+    margin-top: 1px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
+    z-index: 1;
+    width: 200px;
+    text-align: left;
+}
+.sumary_hover:hover .sumary_list{
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+}
+.sumary_list li a {
+    color: #f6f6f6;
+    display: block;
+}
+.sumary_list li{
+    margin: 8px 0;
+}
+.btn{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+section{
+    display: flex;
+    padding: 50px 100px;
+    flex-direction: column;
+}
+h2{
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+}
+.principais_tec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 5px;
+
+
+}
+.titulo_e_imagem{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+.imagem_resumo{
+    min-width: 350px;
+    height: 350px;
+    border-radius: 25px;
+}
+.conteudo{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    
+}
+ 
+
+
+/* codigo css para criar os cards da seção "Oque faz um desenvolvedor web" */
+.card {
+    width: 190px;
+    height: 100px;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(10deg);
+    transition: .4s;
+    overflow: hidden;
+    color: white;
+    margin-right: 10%;
+  }
+  
+  .card:hover {
+    height: 254px;
+    transform: skew(0deg);
+  }
+  
+  .align {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: flex-start;
+  }
+  
+  .red {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff605c;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+  }
+  
+  .yellow {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffbd44;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+  }
+  
+  .green {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00ca4e;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+  }
+  
+  .card h1 {
+    text-align: center;
+    margin: 1.3rem;
+    color: rgb(218, 244, 237);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+  }
+  .card_e_texto{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+  }
+    /* Fim do card */
+
+/* Seção de principais tecnologias  */
+    .titulo_principais_tec{
+        display: flex;
+        justify-content: center;
+    }
+    .principais_tec{
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+    }
+    .imagens_principais_tec{
+        height: 200px;
+        width: 200px;
+        border-radius: 25px;
+    }
+/* Fim de seção de principais tecnologias */
+
+
+/* seção de melhores editores de código */
+.container_editores_de_codigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bloco_de_opcoes{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.imagem_editores{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 25px;
+}
+.texto_editores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Fim da seção de melhores editores de código */
+
+
+/* secao de footer */
+.footer{
+    height: 25vh;
+    color: #dacccc;
+}
+.container_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #22031F;
+}  
+.foto_footer{
+    width: 20vh;
+    height: 30vh;
+    margin: 40px;
+    border-radius: 10px;
+}
+.autor_e_foto{
+    display: flex;
+    background-color: #22031F;
+
+}
+.sobre_mim{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+    
+}
+.autor_ano{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
